@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('front.pages.home');
 });
+Route::group(['prefix'=>"/",'namespace'=>'Front'],function(){
+    Route::get('/login','LoginController@login')->name('front.login.by');
+});
