@@ -24,6 +24,9 @@
 	display: inline-block;
 	direction: ltr;
 }
+.abcRioButton {
+	margin: 10px auto;
+}
 
 .fa,
 [class^="icon-"],

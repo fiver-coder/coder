@@ -1,3 +1,27 @@
+<script>
+      function onSignIn(googleUser) {
+        try {
+            // Useful data for your client-side scripts:
+        let profile = googleUser.getBasicProfile();
+        let id = console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        let full_name = console.log('Full Name: ' + profile.getName());
+        let img = console.log("Image URL: " + profile.getImageUrl());
+        let email = console.log("Email: " + profile.getEmail());
+        
+        // The ID token you need to pass to your backend:
+        let id_token = googleUser.getAuthResponse().id_token;
+        
+        //make ajax request in order to save in session
+        $(document).ready(function(){
+            
+        });
+            
+        } catch (error) {
+            console.log(error);
+        }
+        
+      }
+    </script>
 <footer class="footer">
     <div class="main-footer">
         <div class="colophon wigetized">
