@@ -16,7 +16,9 @@
 	<link rel="stylesheet" href="/css/owl.theme.default.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/css/style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="/css/custom.css" type="text/css" media="all">
-
+	<meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="87419844016-9ptgqgs06qp10uj97sih6otq373bjomr.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
@@ -47,8 +49,11 @@
 									<!-- popup-content mfp-with-anim mfp-hide -->
 									<div class="popup-content box-login mfp-with-anim mfp-hide" id="popup_01">
 										<h4 class="title">ورود</h4>
-										<form class="login-member-container">
+										@include('front.include.errors')
+										<form class="login-member-container" method="post" action="{{route('user.login')}}">
+										{{csrf_field()}}
 											<div class="social-login-widget">
+											
 												<div class="social-login-connect-with">ور 	ود با:</div>
 												<div class="social-login-provider-list">
 													<a rel="nofollow" href="javascript:void(0);" title="ورود با فیسبوک"
@@ -56,10 +61,11 @@
 														<img alt="Facebook" title="ورود با فیسبوک"
 															src="images/icons/facebook.png">
 													</a>
+													
 													<a rel="nofollow" href="javascript:void(0);" title="ورود با گوگل"
 														data-provider="Google">
-														<img alt="Google" title="ورود با گوگل"
-															src="images/icons/google.png">
+													<div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+
 													</a>
 													<a rel="nofollow" href="javascript:void(0);" title="ورود با توییتر"
 														data-provider="Twitter">
@@ -69,27 +75,33 @@
 												</div>
 											</div>
 											<div class="login-member-wrap">
-												<div class="register-member-left">
-													<div class="item-wrap">
-														<label>نام کاربری</label>
-														<input type="text" id="user_name_login" name="user_name_login"
-															value="" class="required">
+												<div class="row">
+													<div class="col-lg-2"></div>
+													<div class="col-lg-8">
+															<div class="register-member-left">
+															<div class="item-wrap">
+																<label>شماره تماس</label>
+																<input type="text" id="user_name_login" name="phone"
+																	 class="required" placeholder="********07" required value="{{old('phone')}}">
+															</div>
+															<div class="item-wrap">
+																<label>رمز عبور</label>
+																<input type="password" id="password_login" name="password"
+																	value="" class="required" required>
+															</div>
+														</div>
+														<div class="login-member-action">
+															<button type="submit" name="login-account" class="button btn-block">
+																ورود <i class="fa-li fa fa-spinner fa-spin hide"></i>
+															</button>
+															<p>
+																<span>حساب کاربری ندارید؟</span>
+																<a class="color" href="#" title="Register now!">هم اکنون ثبت نام
+																	کنید!</a>
+															</p>
+														</div>
 													</div>
-													<div class="item-wrap">
-														<label>رمز عبور</label>
-														<input type="password" id="password_login" name="password_login"
-															value="" class="required">
-													</div>
-												</div>
-												<div class="login-member-action">
-													<button type="submit" name="login-account" class="button">
-														ورود <i class="fa-li fa fa-spinner fa-spin hide"></i>
-													</button>
-													<p>
-														<span>حساب کاربری ندارید؟</span>
-														<a class="color" href="#" title="Register now!">هم اکنون ثبت نام
-															کنید!</a>
-													</p>
+													<div class="col-lg-2"></div>
 												</div>
 											</div>
 										</form>
