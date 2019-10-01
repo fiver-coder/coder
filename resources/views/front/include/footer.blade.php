@@ -13,7 +13,17 @@
         
         //make ajax request in order to save in session
         $(document).ready(function(){
-            
+            $.post("ajax.save_user_data",
+                {   _token: "{{ csrf_token() }}",
+                    id: id,
+                    full_name: full_name,
+                    img:img,
+                    email:email
+                },
+                function(data){
+                    alert(data);
+                }
+            );
         });
             
         } catch (error) {
