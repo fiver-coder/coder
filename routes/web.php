@@ -11,6 +11,8 @@
 |
 */
 
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
     return view('front.pages.home');
 })->name('home');
@@ -30,4 +32,17 @@ Route::get('/profile', function () {
 Route::group(['prefix' => 'ajax'],function(){
     Route::post('/save_user_data','ajaxRequests@save_user_data')->name('ajax.save_user_data');
 });
+<<<<<<< HEAD
 
+=======
+Route::group(['prefix'=>"/",'namespace'=>'Front'],function(){
+    Route::get('/login','LoginController@login')->name('front.login.by');
+    Route::get('/properties-list','propertiesListContoller@propertiesList')->name('front.properties-list');
+    Route::get("/contact-us",'contactUsController@contact')->name("front.contact-us");
+    Route::get('/about-us','aboutUsController@about')->name('front.about-us');
+    Route::get('/blog','blogController@blog')->name('front.blog');
+    Route::get('/blog-details','blogDetailsController@blogDetails')->name('front.blogDetails');
+    Route::get('/add-property','addPropertyController@addProperty')->name('front.addProperty');
+    
+});
+>>>>>>> master
