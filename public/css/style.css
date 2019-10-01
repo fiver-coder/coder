@@ -9010,3 +9010,11 @@ header .navbar-meta.meta-property .meta-content .meta-property {
 .owl-theme .owl-dots .owl-dot{
 	outline: none;
 }
+input:focus{
+	outline: none;
+	border:1px solid orange;
+}
+select:focus{
+	outline: none;
+	border:1px solid orange;
+}

@@ -72,7 +72,7 @@
     </section>
     <!-- END MAP HORIZONTAL -->
     <div class="section">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
@@ -318,8 +318,10 @@
             </div>
         </div>
     </div>
+    {{-- end of speical property --}}
+    {{-- start last property section --}}
     <div class="section pt-9 pb-9">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
@@ -335,6 +337,7 @@
                     </div>
                 </div>
             </div>
+            {{-- end of row --}}
             <div class="row">
                 <div class="col-md-12">
                     <div class="properties-carousel row owl-carousel owl-theme" data-auto-play="false" data-desktop="2"
@@ -470,7 +473,71 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="property-item style-2">
+                                <div class="property-item-wrap">
+                                    <div class="item-featured">
+                                        <a href="property-fullwidth.html" title="Loft Above The City">
+                                            <img src="images/property/property_8.jpg" alt="Loft Above The City">
+                                            <span></span>
+                                        </a>
+                                        <span class="property-status">برای اجاره</span>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-head">
+                                            <h4 class="item-title">
+                                                <a href="property-fullwidth.html" title="Vilayi 2 tabage">منزل ویلایی دو
+                                                    طبقه</a>
+                                            </h4>
+                                            <span class="location">تبریز، چهارراه شهناز</span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="primary-file-1">
+                                                <i class="icon-ruler"></i> <span>لورم ایپسوم</span>
+                                            </span>
+                                            <span class="primary-file-2">
+                                                <i class="icon-bed"></i> <span>3 خوابه</span>
+                                            </span>
+                                            <span class="primary-file-3">
+                                                <i class="icon-bath"></i> <span>لورم ایپسوم</span>
+                                            </span>
+                                        </div>
+                                        <div class="action">
+                                            <div class="price">
+                                                <span class="amount">560,000,000 تومان</span>
+                                            </div>
+                                            <div class="action-post">
+                                                <a data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="علاقه‌مندی‌ها" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <div class="property-sharing">
+                                                    <a data-toggle="tooltip" data-placement="top" title=""
+                                                        data-original-title="علاقه‌مندی‌ها" class="like" href="#">
+                                                        <i class="ion-android-share-alt"></i>
+                                                    </a>
+                                                    <div class="social-property">
+                                                        <a title="اشتراک‌گذاری در فیسبوک" class="share">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                        <a title="اشتراک‌گذاری در توییتر" class="share">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                        <a title="اشتراک‌گذاری در تلگرام" class="share">
+                                                            <i class="fa fa-telegram"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="مقایسه" class="compare" href="#">
+                                                    <i class="ion-arrow-swap"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        {{-- end of item --}}
                         <div class="item">
                             <div class="property-item style-2">
                                 <div class="property-item-wrap">
@@ -606,7 +673,75 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="property-item style-2">
+                                <div class="property-item-wrap">
+                                    <div class="item-featured">
+                                        <a href="property-fullwidth.html" title="Park Avenue Apartment">
+                                            <img src="images/property/property_9.jpg" alt="Park Avenue Apartment">
+                                            <span></span>
+                                        </a>
+                                        <span class="property-status">برای اجاره</span>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-head">
+                                            <h4 class="item-title">
+                                                <i class="ion-bookmark">ویژه</i>
+                                                <a href="property-fullwidth.html" title="Vilayi 2 tabage">منزل ویلایی دو
+                                                    طبقه</a>
+                                            </h4>
+                                            <span class="location">تبریز، چهارراه شهناز</span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="primary-file-1">
+                                                <i class="icon-ruler"></i> <span>3450 متر مربع</span>
+                                            </span>
+                                            <span class="primary-file-2">
+                                                <i class="icon-bed"></i> <span>6 اتاق خواب</span>
+                                            </span>
+                                            <span class="primary-file-3">
+                                                <i class="icon-storage"></i> <span>2 پارکینگ</span>
+                                            </span>
+                                            <span class="primary-file-4">
+                                                <i class="icon-bath"></i> <span>5 سرویس بهداشتی</span>
+                                            </span>
+                                        </div>
+                                        <div class="action">
+                                            <div class="price">
+                                                <span class="amount">560,000,000 تومان</span>
+                                            </div>
+                                            <div class="action-post">
+                                                <a data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="علاقه‌مندی‌ها" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <div class="property-sharing">
+                                                    <a data-toggle="tooltip" data-placement="top" title=""
+                                                        data-original-title="علاقه‌مندی‌ها" class="like" href="#">
+                                                        <i class="ion-android-share-alt"></i>
+                                                    </a>
+                                                    <div class="social-property">
+                                                        <a title="اشتراک‌گذاری در فیسبوک" class="share">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                        <a title="اشتراک‌گذاری در توییتر" class="share">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                        <a title="اشتراک‌گذاری در تلگرام" class="share">
+                                                            <i class="fa fa-telegram"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="مقایسه" class="compare" href="#">
+                                                    <i class="ion-arrow-swap"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        {{-- end of item --}}
                         <div class="item">
                             <div class="property-item style-2">
                                 <div class="property-item-wrap">
@@ -674,12 +809,83 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="property-item style-2">
+                                <div class="property-item-wrap">
+                                    <div class="item-featured">
+                                        <a href="property-fullwidth.html" title="Store Space Greenville">
+                                            <img src="images/property/property_11.jpg" alt="Store Space Greenville">
+                                            <span></span>
+                                        </a>
+                                        <span class="property-status">برای فروش</span>
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-head">
+                                            <h4 class="item-title">
+                                                <a href="property-fullwidth.html" title="Vilayi 2 tabage">منزل ویلایی دو
+                                                    طبقه</a>
+                                            </h4>
+                                            <span class="location">تبریز، چهارراه شهناز</span>
+                                        </div>
+                                        <div class="info">
+                                            <span class="primary-file-1">
+                                                <i class="icon-ruler"></i> <span>100 متر مربع</span>
+                                            </span>
+                                            <span class="primary-file-2">
+                                                <i class="icon-bed"></i> <span>5 خوابه</span>
+                                            </span>
+                                            <span class="primary-file-3">
+                                                <i class="icon-storage"></i> <span>3 پارکینگ</span>
+                                            </span>
+                                            <span class="primary-file-4">
+                                                <i class="icon-bath"></i> <span>3 سرویس بهداشتی</span>
+                                            </span>
+                                        </div>
+                                        <div class="action">
+                                            <div class="price">
+                                                <span class="amount">560,000,000 تومان</span>
+                                            </div>
+                                            <div class="action-post">
+                                                <a data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="علاقه‌مندی‌ها" href="#">
+                                                    <i class="fa fa-heart-o"></i>
+                                                </a>
+                                                <div class="property-sharing">
+                                                    <a data-toggle="tooltip" data-placement="top" title=""
+                                                        data-original-title="علاقه‌مندی‌ها" class="like" href="#">
+                                                        <i class="ion-android-share-alt"></i>
+                                                    </a>
+                                                    <div class="social-property">
+                                                        <a title="اشتراک‌گذاری در فیسبوک" class="share">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                        <a title="اشتراک‌گذاری در توییتر" class="share">
+                                                            <i class="fa fa-twitter"></i>
+                                                        </a>
+                                                        <a title="اشتراک‌گذاری در تلگرام" class="share">
+                                                            <i class="fa fa-telegram"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <a data-toggle="tooltip" data-placement="top" title=""
+                                                    data-original-title="مقایسه" class="compare" href="#">
+                                                    <i class="ion-arrow-swap"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        {{-- end of item --}}
                     </div>
                 </div>
+                {{-- end of col-md-12 --}}
             </div>
+            {{-- end of row  --}}
         </div>
+        {{-- end of container-fluid --}}
     </div>
+    {{-- end of last property --}}
     <div class="section section-overlay section-bg-5 pt-10 pb-20">
         <div class="container">
             <div class="row">
@@ -760,7 +966,7 @@
                                 <div class="blog-item">
                                     <div class="blog-featured">
                                         <div class="content-featured">
-                                            <a class="content-thumb" href="blog-detail-sidebar.html">
+                                            <a class="content-thumb" href="{{route('front.blogDetails')}}">
                                                 <img src="images/blog/blog_1.jpg" alt="">
                                                 <span></span>
                                             </a>
@@ -769,7 +975,7 @@
                                     <div class="wrap-entry">
                                         <div class="entry-header">
                                             <h2>
-                                                <a href="blog-detail-sidebar.html">
+                                                <a href="{{route('front.blogDetails')}}">
                                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
                                                 </a>
                                             </h2>
@@ -794,7 +1000,7 @@
                                 <div class="blog-item">
                                     <div class="blog-featured">
                                         <div class="content-featured">
-                                            <a class="content-thumb" href="blog-detail-sidebar.html">
+                                            <a class="content-thumb" href="{{route('front.blogDetails')}}">
                                                 <img src="images/blog/blog_2.jpg" alt="">
                                                 <span></span>
                                             </a>
@@ -803,7 +1009,7 @@
                                     <div class="wrap-entry">
                                         <div class="entry-header">
                                             <h2>
-                                                <a href="blog-detail-sidebar.html">
+                                                <a href="{{route('front.blogDetails')}}">
                                                     لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از
                                                 </a>
                                             </h2>
