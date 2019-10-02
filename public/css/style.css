@@ -124,7 +124,7 @@ h6 {
 .button,
 .button-2,
 .item-wrap>label {
-	font-weight: 600
+	font-weight: normal;
 }
 .h4,
 .h5,
@@ -216,7 +216,6 @@ input[type=radio] {
 .item-wrap>label {
 	color: #3a3f4c;
 	display: block;
-	font-size: 16px;
 	margin: 35px 0 12px
 }
 .button,
@@ -2184,13 +2183,13 @@ header .navbar-meta.meta-property .meta-content .meta-property {
 	height: auto
 }
 .register-member-left .item-wrap {
-	margin-bottom: 20px
+	margin-bottom: 20px;
+	text-align:right;
 }
 .register-member-left .item-wrap>label {
 	display: inline-block;
-	width: 30%;
+	/* width: 30%; */
 	margin: 0;
-	text-align: left;
 	padding-left: 45px
 }
 .register-member-left .item-wrap>input[type=password],

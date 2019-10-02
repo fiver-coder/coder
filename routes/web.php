@@ -32,9 +32,6 @@ Route::get('/profile', function () {
 Route::group(['prefix' => 'ajax'],function(){
     Route::post('/save_user_data','ajaxRequests@save_user_data')->name('ajax.save_user_data');
 });
-<<<<<<< HEAD
-
-=======
 Route::group(['prefix'=>"/",'namespace'=>'Front'],function(){
     Route::get('/login','LoginController@login')->name('front.login.by');
     Route::get('/properties-list','propertiesListContoller@propertiesList')->name('front.properties-list');
@@ -45,4 +42,3 @@ Route::group(['prefix'=>"/",'namespace'=>'Front'],function(){
     Route::get('/add-property','addPropertyController@addProperty')->name('front.addProperty');
     
 });
->>>>>>> master
