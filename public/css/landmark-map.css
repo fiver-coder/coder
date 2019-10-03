@@ -28,16 +28,16 @@
 }
 #search_map_horizontal .noo-map .gsearch {
 	background: #fff;
-	padding: 50px 30px;
+	padding: 20px;
 	position: relative;
 	border: 1px solid #e5e5f8;
-	max-width: 1170px;
+	max-width: 70%;
 	position: absolute;
 	margin-right: auto;
 	margin-left: auto;
 	right: 0;
 	left: 0;
-	bottom: -170px;
+	top:120px;
 }
 
 
@@ -1420,8 +1420,9 @@
 /* --------------------------------------------------------------------- */
 .noo-map {
 	position: relative;
-	background: url("../images/background/bg-map.jpg") repeat-x scroll 100% top transparent;
+	background: url("../images/bg.jpeg") repeat-x scroll 100% top transparent;
 	background-size: cover;
+	height: 380px;
 }
 .noo-map img{
 	max-width: none;

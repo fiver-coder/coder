@@ -124,7 +124,7 @@ h6 {
 .button,
 .button-2,
 .item-wrap>label {
-	font-weight: 600
+	font-weight: normal;
 }
 .h4,
 .h5,
@@ -216,7 +216,6 @@ input[type=radio] {
 .item-wrap>label {
 	color: #3a3f4c;
 	display: block;
-	font-size: 16px;
 	margin: 35px 0 12px
 }
 .button,
@@ -248,7 +247,15 @@ label {
 	-webkit-border-radius: 0;
 	border-radius: 0;
 	-webkit-box-shadow: none;
-	box-shadow: none
+	box-shadow: none;
+}
+button.login-phone,button.login-email{
+	width: 80%;
+	padding:15px 30px;
+	margin-top:20px;
+}
+button.login-email{
+	margin-bottom:20px;
 }
 .button:before {
 	content: "";
@@ -1982,7 +1989,7 @@ header .navbar-meta.meta-property .meta-content .meta-property {
 }
 .popup-content {
 	text-align: center;
-	max-width: 780px;
+	max-width: 500px;
 	margin: 0 15px;
 	padding: 30px 20px;
 	background-color: #f7f7f7
@@ -2176,13 +2183,13 @@ header .navbar-meta.meta-property .meta-content .meta-property {
 	height: auto
 }
 .register-member-left .item-wrap {
-	margin-bottom: 20px
+	margin-bottom: 20px;
+	text-align:right;
 }
 .register-member-left .item-wrap>label {
 	display: inline-block;
-	width: 30%;
+	/* width: 30%; */
 	margin: 0;
-	text-align: left;
 	padding-left: 45px
 }
 .register-member-left .item-wrap>input[type=password],
@@ -8961,7 +8968,7 @@ header .navbar-meta.meta-property .meta-content .meta-property {
 }
 
 .mfp-close {
-	height: 41px;
+	height: 65px;
 	line-height: 41px;
 }
 
@@ -9001,4 +9008,15 @@ header .navbar-meta.meta-property .meta-content .meta-property {
 
 .bio-img img {
 	width: 100%;
+}
+.owl-theme .owl-dots .owl-dot{
+	outline: none;
+}
+input:focus{
+	outline: none;
+	border:1px solid orange;
+}
+select:focus{
+	outline: none;
+	border:1px solid orange;
 }
